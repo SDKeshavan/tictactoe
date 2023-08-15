@@ -23,6 +23,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
+    overflow:hidden;
 }
 
 header{
@@ -177,6 +178,10 @@ header{
         font-size: calc(30px + 5vw);
     }
 
+    .popup-cont{
+        height: 100vh;
+    }
+
     .popup{
         width: 90%;
         height: 200px;
@@ -188,6 +193,10 @@ header{
         font-size: 15px;
     }
 
+    .info-cont{
+        height: 100vh;
+    }
+    
     .info-box{
         width: 70%;
     }
@@ -198,6 +207,7 @@ header{
 
     .info-box p{
         font-size: calc(10px + 2vw);
+        line-height: 27px;
     }
 
     .txt-box{
