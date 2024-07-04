@@ -5,6 +5,8 @@
 }
 
 :root{
+    --mode-cont : bisque;
+    --mode-color : #fff; 
     --main-bg-color:rgb(43, 181, 181);
     --transp-cont-color:rgba(255,255,255,0.5);
     --cont-border-color:#000;
@@ -13,6 +15,7 @@
     --font-color: #000;
     --popup-bg:#fff;
     --info-bg:#fff;
+    --player-font:Montserrat;
 }
 
 
@@ -23,7 +26,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 header{
@@ -38,6 +41,35 @@ header{
 .name{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left:50px;
+}
+
+.mode-cont{
+    height: calc(200px + 5vw);
+    width: calc(200px + 10vw);
+    display: grid;
+    place-items: center;
+    background-color: var(--mode-cont);
+    border-radius: 10px;
+    padding: 10px 0;
+
+}
+
+.mode{
+    background-color: var(--mode-color);
+    height:90%;
+    width:90%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #000;
+    transition: 250ms outline;
+}
+
+.mode:hover{
+    outline: 1px solid #000;
+    background-color: antiquewhite;
 }
 
 .info-btn-cont{
@@ -77,7 +109,7 @@ header{
     display: grid;
     place-items: center;
     font-size: calc(22px + 2vw);
-    font-family: cursive;
+    font-family: var(--player-font);
     color: var(--font-color);
 }
 
@@ -129,7 +161,7 @@ header{
 }
 
 .crnt-move-ind span{
-    font-family: cursive;
+    font-family: var(--player-font);
     font-weight: bold;
 }
 
@@ -157,6 +189,15 @@ header{
 .info-box p{
     font-size: calc(10px + 0.5vw);
     padding: 5px;
+}
+
+.reset-btn{
+    padding:10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:-80px;
+    cursor: pointer;
+    background-color: #fff;
 }
 
 @media only screen and (max-width:600px){
@@ -196,7 +237,7 @@ header{
     .info-cont{
         height: 100vh;
     }
-    
+
     .info-box{
         width: 70%;
     }
