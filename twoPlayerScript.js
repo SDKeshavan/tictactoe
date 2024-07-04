@@ -237,18 +237,19 @@ function play(r,c,pos){
 }
 
 function reset(){
-    board=[
-        ['.oo','.oi','.oii'],
-        ['.io','.ii','.iii'],
-        ['.iio','.ii-i','.iiii']
-    ]
+    // board=[
+    //     ['.oo','.oi','.oii'],
+    //     ['.io','.ii','.iii'],
+    //     ['.iio','.ii-i','.iiii']
+    // ]
     
-    crnt=0;
-    cond=1;
-    count=0;
+    // crnt=0;
+    // cond=1;
+    // count=0;
     
 
-    document.querySelector(".crnt-move-ind").innerHTML=`Player <span>${players[crnt%2]}</span>'s Chance :`;
+    // document.querySelector(".crnt-move-ind").innerHTML=`Player <span>${players[crnt%2]}</span>'s Chance :`;
+    location.reload()
 }
 
 
