@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>TicTacToe by DeV</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="name" title="TicTacToe by DeV">TicTacToe<sup style="font-size: 13px;">by DeV</sup></h1>
+        <div class="info-btn-cont" onclick="info()">i</div>
+    </header>
+
+    <div class="cont">
+        <div class="box oo" onclick="play(0,0,'.oo')"></div>
+        <div class="box oi" onclick="play(0,1,'.oi')"></div>
+        <div class="box oii" onclick="play(0,2,'.oii')"></div>
+        <div class="box io" onclick="play(1,0,'.io')"></div>
+        <div class="box ii" onclick="play(1,1,'.ii')"></div>
+        <div class="box iii" onclick="play(1,2,'.iii')"></div>
+        <div class="box iio" onclick="play(2,0,'.iio')"></div>
+        <div class="box ii-i" onclick="play(2,1,'.ii-i')"></div>
+        <div class="box iiii" onclick="play(2,2,'.iiii')"></div>
+
+        <div class="reset-btn" onclick="reset()">Reset</div>
+    </div>
+
+    <div class="popup-cont">
+        <div class="popup">
+            <div class="txt-box"></div>
+            <div class="retry-btn" onclick="refresh()">Retry</div>
+        </div>
+    </div>
+
+    <div style="display: none;" class="info-cont">
+        <div class="info-box">
+            <h3>Greetings Player</h3>
+            <p>
+                How to play?<br>
+                TicTacToe is a fun game which consists of two playes X and O who compete to capture consequtive three grids
+                Either it can be horizontal, vertical or Diagonal. Here in Single player mode you can compete with the computer SEMI-AI
+                you are always chosen as X and the computer is always O you have the first move.
+                <br><br>
+                Created by :<br>
+                Devesh Keshavan S
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="twoPlayerScript.js"></script>
+
+</body>
+</html>
